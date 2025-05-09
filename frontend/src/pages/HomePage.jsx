@@ -2,6 +2,7 @@ import { useState } from "react";
 import SearchBar from "../components/SearchBar";
 import JobList from "../components/JobList";
 import { fetchJobs } from "../services/remotive";
+import "../css/index.css";
 
 const HomePage = () => {
   const [jobs, setJobs] = useState([]);
@@ -22,10 +23,11 @@ const HomePage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-image-[url('../bg.png')] bg-cover bg-center bakgrund">
       <div className="max-w-5xl mx-auto pt-12">
-        <h1 className="text-4xl font-bold text-center mb-2">Find Your Dream Job or Internship</h1>
-        <p className="text-center text-gray-500 mb-8">Search through millions of job and internship opportunities</p>
+        <h1 className="text-4xl font-bold text-center mb-2">Välkommen till Liabryggan</h1>
+        <p className="text-center text-gray-500 mb-8">En brygga mellan studenter or arbetslivet!
+Hitta din nästa medarbetare eller LIA-plats här!</p>
         <div className="flex justify-center mb-8">
           <SearchBar
             value={search}

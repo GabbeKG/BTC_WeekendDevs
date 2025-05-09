@@ -18,3 +18,8 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.bakgrund{
+  background-image: url("./bg.png");
+  opacity: .8;
+}
